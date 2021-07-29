@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/bookgallery"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:title="Book Gallery"/>
+
+    <item
+        android:id="@+id/addgallery"
+        android:icon="@drawable/ic_add_black"
+        android:title="Add Gallery"/>
+
+    <item
+        android:id="@+id/newuser"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="Register"/>
+
+    <item
+        android:id="@+id/removeuser"
+        android:icon="@drawable/ic_remove_circle_black_24dp"
+        android:title="Remove User"/>
+
+    <item
+        android:id="@+id/updateuser"
+        android:icon="@drawable/ic_update_black_24dp"
+        android:title="Update User"/>
+
+    <item
+        android:id="@+id/removegallery"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Delete Gallery"/>
+
+</group>
+
+    <item android:title="Others">
+        <menu>
+
+            <item
+                android:id="@+id/mycart"
+                android:icon="@drawable/ic_event_available_black_24dp"
+                android:title="My Bookings"/>
+
+            <item
+                android:id="@+id/allbookings"
+                android:icon="@drawable/ic_event_note_black_24dp"
+                android:title="All Bookings"/>
+
+            <item
+                android:id="@+id/completedevents"
+                android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+                android:title="Completed Events"/>
+
+            <item
+                android:id="@+id/changepassword"
+                android:icon="@drawable/change_password"
+                android:title="Change Password"/>
+
+        </menu>
+    </item>
+
+</menu>

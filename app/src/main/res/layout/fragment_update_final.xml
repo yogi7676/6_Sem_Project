@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateFinal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Change Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/efg"
+                android:id="@+id/updatename"
+                android:textColor="@color/black"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/updatephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Change Phone No"
+                android:layout_below="@id/updatename"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zyx"
+                android:hint="Change User Block"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/abc"
+                android:layout_below="@id/zyx"
+                android:entries="@array/block"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/updatespinner"/>
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Select Block"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/zyx"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Please Select User Type."
+                android:layout_below="@id/updatespinner"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/ghi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change User Type"
+                android:layout_below="@id/ghi"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/efg"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/usertype"
+                android:layout_below="@id/ghi"
+                android:layout_toRightOf="@id/efg"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/updatetype"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/updatephone"
+                android:layout_marginTop="10dp"
+                android:text="Update"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/updatebutton"/>
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

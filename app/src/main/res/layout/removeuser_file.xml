@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/deleteuser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME HERE"
+        android:id="@+id/removename"/>
+
+    <TextView
+         android:layout_marginTop="5dp"
+         android:id="@+id/removetype"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Usertype"
+         android:layout_below="@id/removeid"
+         android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/removephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone NUmber"
+        android:layout_below="@id/removeid"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_below="@id/removename"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email here"
+        android:id="@+id/removeid"/>
+
+    <TextView
+        android:id="@+id/removeblockname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="block here"
+        android:layout_below="@id/removename"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

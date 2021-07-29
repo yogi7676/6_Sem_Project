@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/technicalhome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/technicalbook"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:title="Book Gallery"/>
+
+    <item
+        android:id="@+id/tcart"
+        android:icon="@drawable/ic_event_available_black_24dp"
+        android:title="My Cart"/>
+
+
+    <item
+        android:id="@+id/technicalchangepassword"
+        android:icon="@drawable/change_password"
+        android:title="Change Password"/>
+
+</menu>

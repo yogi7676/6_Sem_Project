@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/technical_navigation"
+    app:startDestination="@id/technicalhome"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/technicalhome"
+        android:name="com.example.project.TechnicalHome"
+        tools:layout="@layout/fragment_technical_home"
+        android:label="Home">
+
+        <action
+            android:id="@+id/hometofinal"
+            app:destination="@id/technialfinal"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/technialfinal"
+        tools:layout="@layout/fragment_technical_final"
+        android:name="com.example.project.technical_final"
+        android:label="Home">
+        <argument
+            android:name="bookingid"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/technicalbook"
+        android:name="com.example.project.BookgalleryFragment"
+        android:label="Book Gallery"
+        tools:layout="@layout/fragment_bookgallery">
+
+        <action
+            android:id="@+id/actionbookgallerytoview"
+            app:destination="@id/bookgalleryview"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookgalleryview"
+        android:name="com.example.project.BookGalleryRecyclerView"
+        android:label="Select Gallery"
+        tools:layout="@layout/fragment_book_gallery_recycler_view">
+
+        <action
+            android:id="@+id/actionbookgalleryviewwtofinal"
+            app:destination="@id/bookgalleryfinal"/>
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookgalleryfinal"
+        android:name="com.example.project.bookgallerycheckout"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_fragment__checkout">
+        <argument
+            android:name="galleryid"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/technicalchangepassword"
+        android:name="com.example.project.ChangepasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_changepassword"/>
+
+    <fragment
+        android:id="@+id/tcart"
+        android:name="com.example.project.MyBookings"
+        tools:layout="@layout/fragment_my_bookings"
+        android:label="My Bookings"/>
+
+</navigation>

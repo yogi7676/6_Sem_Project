@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">hOLO</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="appname">CHRIST ACADEMY</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="username">Username</string>
+    <string name="newuser">Don\'t Have an Account?</string>
+    <string name="resetlinkname">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="register">SIGNUP</string>
+    <string name="reenter">Re-Enter Password</string>
+    <string name="already">Already Registered ? Login Here</string>
+
+    <string-array name="usertype">
+        <item>Choose UserType</item>
+        <item>ADMIN</item>
+        <item>STAFF</item>
+        <item>IT STAFF</item>
+    </string-array>
+
+    <string-array name="period">
+        <item>Please Select</item>
+        <item>7:00 AM : 8:05 AM</item>
+        <item>8:06 AM : 9:05 AM</item>
+        <item>9:05 AM : 10:25 AM</item>
+        <item>10:26 AM : 11:25 AM</item>
+        <item>11:26 AM : 12:20 PM</item>
+        <item>12:20 PM : 1:15 PM</item>
+    </string-array>
+
+    <string-array name="block">
+        <item>Choose Block</item>
+        <item>ICSE</item>
+        <item>CBSE</item>
+        <item>PUC</item>
+        <item>DEGREE</item>
+        <item>LAW</item>
+    </string-array>
+
+    <string-array name="searchuser">
+        <item>Name</item>
+        <item>Email</item>
+        <item>PhoneNo</item>
+        <item>UserType</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

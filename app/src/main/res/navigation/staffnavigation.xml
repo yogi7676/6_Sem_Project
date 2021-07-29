@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staffnavigation"
+    app:startDestination="@id/home">
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.project.BookgalleryFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_bookgallery">
+
+        <action
+            android:id="@+id/actionbookgallerytoview"
+            app:destination="@id/bookgalleryview"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookgalleryview"
+        android:name="com.example.project.BookGalleryRecyclerView"
+        android:label="Select Gallery"
+        tools:layout="@layout/fragment_book_gallery_recycler_view">
+
+        <action
+            android:id="@+id/actionbookgalleryviewwtofinal"
+            app:destination="@id/bookgalleryfinal"/>
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument android:name="period"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.project.MyBookings"
+        tools:layout="@layout/fragment_my_bookings"
+        android:label="My Bookings"/>
+
+    <fragment
+        android:id="@+id/bookgalleryfinal"
+        android:name="com.example.project.bookgallerycheckout"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_fragment__checkout">
+        <argument
+            android:name="galleryid"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/newpass"
+        tools:layout="@layout/fragment_changepassword"
+        android:name="com.example.project.ChangepasswordFragment"
+        android:label="Change Password"/>
+
+</navigation>

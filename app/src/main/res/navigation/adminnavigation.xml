@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminnavigation"
+    app:startDestination="@id/bookgallery">
+
+
+    <fragment
+        android:id="@+id/bookgallery"
+        android:name="com.example.project.BookgalleryFragment"
+        android:label="Book Gallery"
+        tools:layout="@layout/fragment_bookgallery">
+
+        <action
+            android:id="@+id/actionbookgallerytoview"
+            app:destination="@id/bookgalleryview"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookgalleryview"
+        android:name="com.example.project.BookGalleryRecyclerView"
+        android:label="Select Gallery"
+        tools:layout="@layout/fragment_book_gallery_recycler_view">
+
+        <action
+            android:id="@+id/actionbookgalleryviewwtofinal"
+            app:destination="@id/bookgalleryfinal"/>
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookgalleryfinal"
+        android:name="com.example.project.bookgallerycheckout"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_fragment__checkout">
+        <argument
+            android:name="galleryid"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="period"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addgallery"
+        android:name="com.example.project.AddgalleryFragment"
+        android:label="Add Gallery"
+        tools:layout="@layout/fragment_addgallery"/>
+
+    <fragment
+        android:id="@+id/newuser"
+        android:name="com.example.project.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register"/>
+
+    <fragment
+        android:id="@+id/changepassword"
+        android:name="com.example.project.ChangepasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_changepassword"/>
+
+    <fragment
+        android:id="@+id/removeuser"
+        android:name="com.example.project.RemoveUser"
+        tools:layout="@layout/fragment_remove_user"
+        android:label="Remove User"/>
+
+    <fragment
+        android:id="@+id/removegallery"
+        android:label="Delete Gallery"
+        tools:layout="@layout/fragment_delete_gallery"
+        android:name="com.example.project.DeleteGallery"/>
+
+    <fragment
+        android:id="@+id/updateuser"
+        android:label="Update User Information"
+        tools:layout="@layout/fragment_update_user"
+        android:name="com.example.project.UpdateUser">
+
+        <action
+            android:id="@+id/actionupdateusertoupdateuserfinal"
+            app:destination="@id/updateuserfinal"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateuserfinal"
+        android:label="Update User Information"
+        android:name="com.example.project.UpdateFinal"
+        tools:layout="@layout/fragment_update_final">
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mycart"
+        android:name="com.example.project.MyBookings"
+        tools:layout="@layout/fragment_my_bookings"
+        android:label="My Bookings"/>
+
+    <fragment
+        android:id="@+id/allbookings"
+        android:name="com.example.project.AllBookings"
+        tools:layout="@layout/fragment_all_bookings"
+        android:label="All Bookings"/>
+
+    <fragment
+        android:id="@+id/completedevents"
+        android:name="com.example.project.CompletedEvents"
+        tools:layout="@layout/fragment_completed_events"
+        android:label="Completed Events"/>
+
+</navigation>
